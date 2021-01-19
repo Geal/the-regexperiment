@@ -8,5 +8,6 @@ The conversation [started on Twitter](https://twitter.com/gcouprie/status/135124
 
 - regular expressions must be executed the same way, with the same syntax, in multiple languages
 - the implementation should work in an adversarial setup, where the attacker feeds us pathological expressions
+- implementations in multiple languages (embedding one C or Rust library everywhere is doable, but prevents adoption and causes packaging issues in a lot of languages)
 - must be usable at runtime (regexps can come from a network request)
 - the expressions will not run on a large string at once (at most 1 kilobyte in most environments), but could be executed on lots of small inputs
